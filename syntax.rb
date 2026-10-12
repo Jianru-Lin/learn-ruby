@@ -87,14 +87,16 @@ puts /foo/m
 puts /foo/mi
 puts /foo/mix
 
-puts '[Literals - Lambda Proc]'
-puts -> { 1 + 1 }
-puts ->(a) { 1 + a }
+puts '[Literals - Lambda]'
 puts lambda { 1 + 1 }
 puts lambda { |v| 1 + v }
-puts -> do 1 + 1 end
-puts ->(a) do 1 + a end
 # wrong: puts lambda do 1 + 1 end
 puts (lambda do 1 + 1 end)
 # wrong: puts lambda do |v| 1 + v end
 puts (lambda do |v| 1 + v end)
+
+puts '[Literals - Lambda Proc]'
+puts -> { 1 + 1 }
+puts ->(a) { 1 + a }
+puts -> do 1 + 1 end
+puts ->(a) do 1 + a end
