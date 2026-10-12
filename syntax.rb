@@ -1,3 +1,11 @@
+# single line comment
+
+=begin
+comment line 1
+comment line 2
+comment line 3
+=end
+
 puts '[Literals - Boolean]'
 puts true
 puts false
@@ -100,3 +108,26 @@ puts -> { 1 + 1 }
 puts ->(a) { 1 + a }
 puts -> do 1 + 1 end
 puts ->(a) do 1 + a end
+
+
+puts '[Literals - Percent]'
+puts %q|hello #{1 + 1}|
+puts %Q|hello #{1 + 1}|
+puts %|hello #{1 + 1}|
+puts %!hello!
+puts %:hello:
+puts %[hello]
+puts %(hello)
+puts %{hello}
+puts %<hello>
+puts %w[a b c]
+puts %w[a\ b\ c]
+puts %w[a b #{1 + 2}]
+puts %W[a b #{1 + 2}]
+puts %i[a b c]
+puts %I[a b c #{1 + 2}]
+puts %s[a]
+puts %s[a b]
+puts %r[foo]
+puts %r[name/value pair]
+puts %x(echo 1)
